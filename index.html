@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9597911405091918"
+     crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global AI Tools Hub</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+:root{
+  --bg:#0a0a0a;
+  --surface:#111111;
+  --surface2:#181818;
+  --border:#222222;
+  --border2:#2e2e2e;
+  --text:#e8e3dc;
+  --text2:#888880;
+  --text3:#555550;
+  --gold:#c9a96e;
+  --gold2:#8a6f3e;
+  --white:#f5f0e8;
+  --live:#4a7c59;
+}
+.light{
+  --bg:#f7f5f1;
+  --surface:#ffffff;
+  --surface2:#f0ece6;
+  --border:#e0dbd4;
+  --border2:#ccc7be;
+  --text:#1a1815;
+  --text2:#6b6660;
+  --text3:#aaa59e;
+  --gold:#9a7340;
+  --gold2:#c9a96e;
+  --white:#1a1815;
+  --live:#2d6b45;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  font-weight:300;
+  line-height:1.6;
+  min-height:100vh;
+  overflow-x:hidden;
+  transition:background .4s,color .4s;
+}
+
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size:256px 256px;
+  pointer-events:none;z-index:0;opacity:.6;
+}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0 24px;border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-wordmark{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text3)}
+.nav-wordmark span{color:var(--gold)}
+.theme-btn{background:none;border:1px solid var(--border2);color:var(--text3);padding:7px 18px;border-radius:2px;cursor:pointer;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:all .25s}
+.theme-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+.ad-strip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:10px 0;text-align:center;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text3)}
+
+.hero{padding:80px 0 64px;border-bottom:1px solid var(--border)}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+.hero-kicker::after{content:'';flex:0 0 40px;height:1px;background:var(--gold2)}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,68px);font-weight:400;line-height:1.08;letter-spacing:-1px;color:var(--white);margin-bottom:24px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:15px;color:var(--text2);max-width:420px;font-weight:300;line-height:1.7}
+
+.controls{display:flex;gap:0;align-items:stretch;margin:48px 0 0;border:1px solid var(--border2);border-radius:3px;overflow:hidden}
+.search-wrap{flex:1;position:relative}
+.search-wrap svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--text3);width:14px;height:14px}
+.search-input{width:100%;height:100%;min-height:48px;background:var(--surface);border:none;border-right:1px solid var(--border2);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:300;padding:0 18px 0 44px;outline:none;transition:background .2s}
+.search-input::placeholder{color:var(--text3)}
+.search-input:focus{background:var(--surface2)}
+
+.filters{display:flex;gap:0;margin-top:20px;border:1px solid var(--border);border-radius:3px;overflow:hidden;width:fit-content}
+.filter-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;background:none;border:none;border-right:1px solid var(--border);color:var(--text3);cursor:pointer;transition:all .2s;white-space:nowrap}
+.filter-btn:last-child{border-right:none}
+.filter-btn:hover{background:var(--surface2);color:var(--text2)}
+.filter-btn.active{background:var(--surface2);color:var(--gold);font-weight:500}
+
+.section-bar{display:flex;align-items:baseline;justify-content:space-between;padding:40px 0 20px;border-bottom:1px solid var(--border)}
+.section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text3)}
+.tools-count{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold)}
+
+.cat-divider{display:flex;align-items:center;gap:20px;padding:32px 0 0;margin-bottom:0}
+.cat-divider-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--text3);white-space:nowrap}
+.cat-divider-line{flex:1;height:1px;background:var(--border)}
+
+/* TOOL ROW — 4 col: num | logo | body | actions */
+.tool-row{
+  display:grid;
+  grid-template-columns:28px 48px 1fr auto;
+  align-items:start;
+  gap:0 20px;
+  padding:26px 0;
+  border-bottom:1px solid var(--border);
+  transition:background .2s;
+  position:relative;
+}
+.tool-row::before{content:'';position:absolute;inset:0 -32px;background:var(--surface2);opacity:0;transition:opacity .2s;pointer-events:none}
+.tool-row:hover::before{opacity:1}
+
+.row-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--text3);letter-spacing:1px;padding-top:2px;position:relative;z-index:1}
+
+/* LOGO BOX */
+.tool-logo{
+  width:48px;height:48px;
+  border-radius:12px;
+  border:1px solid var(--border2);
+  background:var(--surface2);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;overflow:hidden;
+  position:relative;z-index:1;
+}
+
+.row-body{position:relative;z-index:1}
+.row-status{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--live);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.live-dot{width:5px;height:5px;border-radius:50%;background:var(--live);flex-shrink:0;animation:livepulse 3s ease-in-out infinite}
+@keyframes livepulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.row-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--white);line-height:1.2;margin-bottom:6px;letter-spacing:-.2px}
+.row-title .sub{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:400;color:var(--text3);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:4px;font-style:normal}
+.row-desc{font-size:13.5px;color:var(--text2);line-height:1.65;max-width:480px;font-weight:300}
+.row-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--gold2);transition:all .2s}
+.row-link:hover{color:var(--white);border-color:var(--white)}
+.row-link svg{width:10px;height:10px;transition:transform .2s}
+.row-link:hover svg{transform:translate(3px,-3px)}
+
+.row-actions{display:flex;flex-direction:column;align-items:flex-end;gap:8px;padding-top:2px;position:relative;z-index:1}
+.fav-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px;padding:4px;transition:color .2s;line-height:1}
+.fav-btn:hover,.fav-btn.active{color:var(--gold)}
+
+.util-section{padding:48px 0 0}
+.util-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-top:20px}
+.util-link{background:var(--surface);color:var(--text2);text-decoration:none;padding:18px 20px;font-size:13px;font-weight:400;transition:all .2s;border-right:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.util-link:last-child{border-right:none}
+.util-link:hover{background:var(--surface2);color:var(--text)}
+.util-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text3);display:block;margin-bottom:4px}
+
+.cta{margin:80px 0;padding:56px 48px;border:1px solid var(--border2);border-radius:3px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--surface);position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+.cta-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:var(--white);margin-bottom:8px}
+.cta-sub{font-size:13px;color:var(--text2);font-weight:300}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid var(--gold2);color:var(--gold);padding:14px 28px;border-radius:2px;text-decoration:none;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:all .25s;white-space:nowrap}
+.cta-btn:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+
+footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text3)}
+.footer-copy span{color:var(--gold)}
+.footer-right{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--text3);text-transform:uppercase}
+
+#scroll-top-btn{position:fixed;bottom:32px;right:32px;width:40px;height:40px;background:var(--surface);border:1px solid var(--border2);color:var(--text2);border-radius:2px;font-size:16px;cursor:pointer;display:none;align-items:center;justify-content:center;transition:all .2s;z-index:100;font-family:'DM Mono',monospace}
+#scroll-top-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+.tool-row{animation:rowIn .4s ease both}
+@keyframes rowIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="nav-logo">
+      <!-- Site logo mark -->
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="14" stroke="#c9a96e" stroke-width="0.75" opacity="0.4"/>
+        <circle cx="15" cy="15" r="9" stroke="#c9a96e" stroke-width="0.5" opacity="0.25"/>
+        <circle cx="15" cy="15" r="2" fill="#c9a96e"/>
+        <circle cx="15" cy="1.2" r="1.4" fill="#c9a96e"/>
+        <circle cx="15" cy="28.8" r="1.4" fill="#c9a96e"/>
+        <circle cx="27.1" cy="8.1" r="1.4" fill="#c9a96e"/>
+        <circle cx="2.9" cy="8.1" r="1.4" fill="#c9a96e"/>
+        <circle cx="27.1" cy="21.9" r="1.4" fill="#c9a96e"/>
+        <circle cx="2.9" cy="21.9" r="1.4" fill="#c9a96e"/>
+        <line x1="15" y1="13" x2="15" y2="2.6" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+        <line x1="15" y1="17" x2="15" y2="27.4" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+        <line x1="13.2" y1="14" x2="4.1" y2="9" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+        <line x1="16.8" y1="14" x2="25.9" y2="9" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+        <line x1="13.2" y1="16" x2="4.1" y2="21" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+        <line x1="16.8" y1="16" x2="25.9" y2="21" stroke="#c9a96e" stroke-width="0.5" opacity="0.5"/>
+      </svg>
+      <span class="nav-wordmark">Global <span>AI</span> Hub</span>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()">Light / Dark</button>
+  </nav>
+
+  <div class="ad-strip">Advertisement — Google AdSense Will Appear Here</div>
+
+  <header class="hero">
+    <div class="hero-kicker">Curated AI Intelligence</div>
+    <h1>The world's most<br>powerful <em>AI tools</em>,<br>in one place.</h1>
+    <p class="hero-sub">Twelve carefully selected AI utilities for professionals, creators, and builders worldwide.</p>
+    <div class="controls">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="search-input" id="search-input" type="text" placeholder="Search — ChatGPT, Gemini, Music, Video...">
+      </div>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="text">Chat & Text</button>
+      <button class="filter-btn" data-category="image">Image & Art</button>
+      <button class="filter-btn" data-category="video">Video & Audio</button>
+      <button class="filter-btn" data-category="favs">Saved</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-bar">
+      <div class="section-label">Top Worldwide Models</div>
+      <div class="tools-count" id="tools-counter">12 Tools</div>
+    </div>
+
+    <div class="cat-divider"><div class="cat-divider-label">Chat & Text</div><div class="cat-divider-line"></div></div>
+
+    <!-- GEMINI -->
+    <div class="tool-row" data-id="gemini" data-cat="text">
+      <div class="row-num">01</div>
+      <div class="tool-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 3C14 3 17.5 10.5 25 14C17.5 17.5 14 25 14 25C14 25 10.5 17.5 3 14C10.5 10.5 14 3 14 3Z" fill="url(#gem_grad)"/>
+          <defs>
+            <linearGradient id="gem_grad" x1="3" y1="3" x2="25" y2="25" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4285F4"/>
+              <stop offset="35%" stop-color="#9B72CB"/>
+              <stop offset="65%" stop-color="#EA4335"/>
+              <stop offset="100%" stop-color="#FBBC04"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Google</span>Gemini</div>
+        <div class="row-desc">Google's most capable multimodal AI. Understands text, code, images, and video to help you create and learn faster than ever.</div>
+        <a href="https://gemini.google.com" target="_blank" class="row-link">Open Gemini <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('gemini')">&#9733;</button></div>
+    </div>
+
+    <!-- CHATGPT -->
+    <div class="tool-row" data-id="chatgpt" data-cat="text">
+      <div class="row-num">02</div>
+      <div class="tool-logo" style="background:#0d0d0d;">
+        <svg width="26" height="26" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835 9.964 9.964 0 0 0-6.99-3.707 10.079 10.079 0 0 0-10.199 4.948 9.967 9.967 0 0 0-6.614 4.823 10.079 10.079 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 6.99 3.707 10.079 10.079 0 0 0 10.199-4.948 9.967 9.967 0 0 0 6.614-4.823 10.079 10.079 0 0 0-1.24-11.817zm-17.56 24.106a7.461 7.461 0 0 1-4.885-1.86l.24-.13 8.121-4.687a1.32 1.32 0 0 0 .668-1.149v-11.44l3.434 1.982a.12.12 0 0 1 .066.092v9.479a7.505 7.505 0 0 1-7.644 7.713zm-16.455-6.9a7.459 7.459 0 0 1-.894-5.023l.24.144 8.121 4.687a1.318 1.318 0 0 0 1.337 0l9.914-5.724v3.965a.12.12 0 0 1-.048.103l-8.208 4.741a7.5 7.5 0 0 1-10.462-2.893zm-2.14-17.41a7.462 7.462 0 0 1 3.908-3.285l-.009.275v9.375a1.321 1.321 0 0 0 .668 1.148l9.913 5.723-3.433 1.983a.12.12 0 0 1-.116.013L9.097 25.96a7.5 7.5 0 0 1-7.721-8.494zm28.19 6.44l-9.913-5.725 3.433-1.982a.121.121 0 0 1 .116-.013l8.208 4.74a7.499 7.499 0 0 1-1.158 13.528v-9.65a1.321 1.321 0 0 0-.686-1.898zm3.417-5.038l-.24-.144-8.12-4.687a1.32 1.32 0 0 0-1.337 0L13.993 19.68v-3.965a.121.121 0 0 1 .048-.103l8.208-4.74a7.498 7.498 0 0 1 11.166 7.763zm-21.478 7.072l-3.434-1.982a.12.12 0 0 1-.066-.092v-9.479a7.497 7.497 0 0 1 12.293-5.756l-.24.13-8.12 4.686a1.321 1.321 0 0 0-.668 1.149l-.009 11.44-.009-.009-.009-.087zm1.865-4.025l4.414-2.549 4.413 2.548v5.097l-4.413 2.549-4.414-2.549V21.115z" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">OpenAI</span>ChatGPT</div>
+        <div class="row-desc">The pioneer AI assistant. Expert-level coding, writing, problem solving, and analysis — available to anyone, instantly.</div>
+        <a href="https://chatgpt.com" target="_blank" class="row-link">Open ChatGPT <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('chatgpt')">&#9733;</button></div>
+    </div>
+
+    <!-- CLAUDE -->
+    <div class="tool-row" data-id="claude" data-cat="text">
+      <div class="row-num">03</div>
+      <div class="tool-logo" style="background:#cc6633;">
+        <svg width="26" height="26" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32.73 6.5H27.1L36.9 34.18h5.63L32.73 6.5z" fill="#fff"/>
+          <path d="M17.87 6.5H12.24L2.47 34.18h5.63l2.3-6.7h14.34l-2.11-5.8H11.95l5.92-15.18z" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Anthropic</span>Claude</div>
+        <div class="row-desc">Exceptional at nuanced writing, deep analysis, and advanced programming. Known for accuracy and a distinctly human tone.</div>
+        <a href="https://claude.ai" target="_blank" class="row-link">Open Claude <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('claude')">&#9733;</button></div>
+    </div>
+
+    <!-- GROK -->
+    <div class="tool-row" data-id="grok" data-cat="text">
+      <div class="row-num">04</div>
+      <div class="tool-logo" style="background:#000;">
+        <svg width="22" height="22" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 50 250 L 150 50 L 250 250" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M 85 175 L 215 175" stroke="white" stroke-width="32" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">xAI</span>Grok</div>
+        <div class="row-desc">Real-time intelligence via X. Built by Elon Musk's xAI with direct access to live world information — unfiltered and sharp.</div>
+        <a href="https://grok.com" target="_blank" class="row-link">Open Grok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('grok')">&#9733;</button></div>
+    </div>
+
+    <!-- PERPLEXITY -->
+    <div class="tool-row" data-id="perplexity" data-cat="text">
+      <div class="row-num">05</div>
+      <div class="tool-logo" style="background:#1a1a2e;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#20b2aa" stroke-width="1.5" fill="none"/>
+          <line x1="12" y1="2" x2="12" y2="22" stroke="#20b2aa" stroke-width="1.5"/>
+          <line x1="2" y1="7" x2="22" y2="7" stroke="#20b2aa" stroke-width="1" opacity="0.5"/>
+          <line x1="2" y1="17" x2="22" y2="17" stroke="#20b2aa" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Perplexity AI</span>Search Engine</div>
+        <div class="row-desc">AI-powered search that scans the internet in real time and returns cited, structured answers — not just links.</div>
+        <a href="https://www.perplexity.ai" target="_blank" class="row-link">Open Perplexity <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('perplexity')">&#9733;</button></div>
+    </div>
+
+    <div class="cat-divider"><div class="cat-divider-label">Image & Art</div><div class="cat-divider-line"></div></div>
+
+    <!-- MIDJOURNEY -->
+    <div class="tool-row" data-id="midjourney" data-cat="image">
+      <div class="row-num">06</div>
+      <div class="tool-logo" style="background:#fff;">
+        <svg width="28" height="28" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 50 Q30 5 50 50 Q70 5 90 50" stroke="#000" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Midjourney</span>Image Generator</div>
+        <div class="row-desc">The global gold standard for AI image creation. Produce photorealistic art, cinematic scenes, and concept visuals from text.</div>
+        <a href="https://www.midjourney.com" target="_blank" class="row-link">Open Midjourney <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('midjourney')">&#9733;</button></div>
+    </div>
+
+    <!-- FIREFLY -->
+    <div class="tool-row" data-id="firefly" data-cat="image">
+      <div class="row-num">07</div>
+      <div class="tool-logo" style="background:#1c0a2e;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C9 6 6 7 3 6c1 4 3 7 6 8-1 2-2 5-1 8 2-2 4-3 4-3s2 1 4 3c1-3 0-6-1-8 3-1 5-4 6-8-3 1-6 0-9-4z" fill="#FF6B35"/>
+          <circle cx="12" cy="14" r="2" fill="#FFD700"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Adobe</span>Firefly</div>
+        <div class="row-desc">Commercially safe AI art generation built into the Adobe ecosystem. Ideal for professional creative workflows and brand assets.</div>
+        <a href="https://firefly.adobe.com" target="_blank" class="row-link">Open Firefly <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('firefly')">&#9733;</button></div>
+    </div>
+
+    <!-- LEONARDO -->
+    <div class="tool-row" data-id="leonardo" data-cat="image">
+      <div class="row-num">08</div>
+      <div class="tool-logo" style="background:#0f0f1a;">
+        <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="25,4 46,16 46,34 25,46 4,34 4,16" stroke="#e02424" stroke-width="2.5" fill="none"/>
+          <polygon points="25,12 38,19.5 38,30.5 25,38 12,30.5 12,19.5" fill="#e02424" opacity="0.3"/>
+          <circle cx="25" cy="25" r="5" fill="#e02424"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Leonardo.ai</span>Creative Studio</div>
+        <div class="row-desc">Detailed character models, game assets, and realistic imagery — free daily credits, no subscription required to start.</div>
+        <a href="https://leonardo.ai" target="_blank" class="row-link">Open Leonardo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('leonardo')">&#9733;</button></div>
+    </div>
+
+    <div class="cat-divider"><div class="cat-divider-label">Video & Audio</div><div class="cat-divider-line"></div></div>
+
+    <!-- ELEVENLABS -->
+    <div class="tool-row" data-id="elevenlabs" data-cat="video">
+      <div class="row-num">09</div>
+      <div class="tool-logo" style="background:#f5f0e8;">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="8" width="6" height="24" rx="3" fill="#111"/>
+          <rect x="13" y="4" width="6" height="32" rx="3" fill="#111"/>
+          <rect x="22" y="10" width="6" height="20" rx="3" fill="#111"/>
+          <rect x="31" y="14" width="6" height="12" rx="3" fill="#111"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">ElevenLabs</span>Voice AI</div>
+        <div class="row-desc">Generate lifelike speech in 30+ languages. Clone your own voice or choose from a professional library — zero recording required.</div>
+        <a href="https://elevenlabs.io" target="_blank" class="row-link">Open ElevenLabs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('elevenlabs')">&#9733;</button></div>
+    </div>
+
+    <!-- SUNO -->
+    <div class="tool-row" data-id="suno" data-cat="video">
+      <div class="row-num">10</div>
+      <div class="tool-logo" style="background:#0a0a0a;">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="16" stroke="#ec4899" stroke-width="2"/>
+          <circle cx="20" cy="20" r="8" stroke="#ec4899" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="20" cy="20" r="3" fill="#ec4899"/>
+          <line x1="20" y1="4" x2="20" y2="36" stroke="#ec4899" stroke-width="1" opacity="0.2"/>
+          <line x1="4" y1="20" x2="36" y2="20" stroke="#ec4899" stroke-width="1" opacity="0.2"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Suno AI</span>Music Generator</div>
+        <div class="row-desc">Type a prompt — get a full song with vocals, instruments, and lyrics in seconds. Rap, pop, jazz, or anything in between.</div>
+        <a href="https://suno.com" target="_blank" class="row-link">Open Suno <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('suno')">&#9733;</button></div>
+    </div>
+
+    <!-- CLIPCHAMP -->
+    <div class="tool-row" data-id="clipchamp" data-cat="video">
+      <div class="row-num">11</div>
+      <div class="tool-logo" style="background:#1b1b2e;">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="8" width="22" height="24" rx="3" stroke="#a855f7" stroke-width="2" fill="none"/>
+          <path d="M25 16l10 4-10 4V16z" fill="#a855f7"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Microsoft</span>Clipchamp</div>
+        <div class="row-desc">Browser-based AI video editor with auto-captioning, smart composition, and a clean timeline — no installation needed.</div>
+        <a href="https://clipchamp.com" target="_blank" class="row-link">Open Clipchamp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('clipchamp')">&#9733;</button></div>
+    </div>
+
+    <!-- RUNWAY -->
+    <div class="tool-row" data-id="runway" data-cat="video">
+      <div class="row-num">12</div>
+      <div class="tool-logo" style="background:#fff;">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="32" height="32" rx="4" fill="#000"/>
+          <path d="M11 13h10c3 0 5 2 5 4s-2 4-5 4h-4l6 6h-4l-6-6v6h-2V13z" fill="#fff"/>
+          <path d="M11 13h10c3 0 5 2 5 4s-2 4-5 4h-4" stroke="#fff" stroke-width="0" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="row-body">
+        <div class="row-status"><span class="live-dot"></span>Active</div>
+        <div class="row-title"><span class="sub">Runway</span>Gen-2 Video</div>
+        <div class="row-desc">Transform text prompts into cinematic video clips. The tool Hollywood studios actually use for visual effects and storytelling.</div>
+        <a href="https://runwayml.com" target="_blank" class="row-link">Open Runway <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="row-actions"><button class="fav-btn" onclick="toggleFavorite('runway')">&#9733;</button></div>
+    </div>
+  </main>
+
+  <div class="util-section">
+    <div class="section-bar" style="padding-top:0">
+      <div class="section-label">Quick Utilities</div>
+    </div>
+    <div class="util-grid">
+      <a href="https://www.remove.bg" target="_blank" class="util-link"><span class="util-label">remove.bg</span>Background Remover</a>
+      <a href="https://www.grammarly.com" target="_blank" class="util-link"><span class="util-label">Grammarly</span>Grammar Checker</a>
+      <a href="https://tinypng.com" target="_blank" class="util-link"><span class="util-label">TinyPNG</span>Image Compressor</a>
+      <a href="https://quillbot.com" target="_blank" class="util-link"><span class="util-label">QuillBot</span>AI Paraphraser</a>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <div class="cta-title">List your AI tool</div>
+      <div class="cta-sub">Reach thousands of professionals and creators worldwide. Submit your tool for review.</div>
+    </div>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nomanreyaz147@gmail.com&su=AI+Tool+Submission" target="_blank" class="cta-btn">Submit a Tool ↗</a>
+  </div>
+
+  <footer>
+    <div class="footer-copy">© 2026 Global AI Hub — Built in <span>Kashmir</span></div>
+    <div class="footer-right">All tools are free to use</div>
+  </footer>
+</div>
+
+<button id="scroll-top-btn" onclick="scrollToTop()">↑</button>
+
+<script>
+const searchInput=document.getElementById('search-input');
+const filterBtns=document.querySelectorAll('.filter-btn');
+const rows=document.querySelectorAll('.tool-row');
+const counter=document.getElementById('tools-counter');
+const scrollBtn=document.getElementById('scroll-top-btn');
+let currentCat='all';
+let favs=[];
+try{const s=localStorage.getItem('ai_hub_favs');if(s)favs=JSON.parse(s);}catch(e){}
+if(localStorage.getItem('theme')==='light')document.body.classList.add('light');
+function toggleTheme(){document.body.classList.toggle('light');localStorage.setItem('theme',document.body.classList.contains('light')?'light':'dark');}
+function updateStars(){rows.forEach(row=>{const id=row.getAttribute('data-id');const btn=row.querySelector('.fav-btn');btn.classList.toggle('active',favs.includes(id));});}
+function toggleFavorite(id){favs=favs.includes(id)?favs.filter(f=>f!==id):[...favs,id];localStorage.setItem('ai_hub_favs',JSON.stringify(favs));updateStars();if(currentCat==='favs')filterTools();}
+function filterTools(){const q=searchInput.value.toLowerCase();let count=0;rows.forEach(row=>{const id=row.getAttribute('data-id');const cat=row.getAttribute('data-cat');const text=row.innerText.toLowerCase();const mSearch=!q||text.includes(q);const mCat=currentCat==='all'?true:currentCat==='favs'?favs.includes(id):cat===currentCat;const show=mSearch&&mCat;row.style.display=show?'':'none';if(show)count++;});counter.textContent=count+' Tool'+(count!==1?'s':'');}
+window.addEventListener('scroll',()=>{scrollBtn.style.display=window.scrollY>400?'flex':'none';});
+function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'});}
+searchInput.addEventListener('input',filterTools);
+filterBtns.forEach(btn=>{btn.addEventListener('click',function(){filterBtns.forEach(b=>b.classList.remove('active'));this.classList.add('active');currentCat=this.getAttribute('data-category');filterTools();});});
+updateStars();
+</script>
+</body>
+</html>
