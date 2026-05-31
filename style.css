@@ -78,7 +78,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0
 .search-input:focus{background:var(--surface2)}
 
 /* FILTERS */
-.filters{display:flex;gap:0;margin-top:20px;border:1px solid var(--border);border-radius:3px;overflow:hidden;width:fit-content;flex-wrap:wrap}
+.filters{display:flex;gap:0;margin-top:20px;border:1px solid var(--border);border-radius:3px;overflow:hidden;flex-wrap:wrap}
 .filter-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:9px 16px;background:none;border:none;border-right:1px solid var(--border);color:var(--text3);cursor:pointer;transition:all .2s;white-space:nowrap}
 .filter-btn:last-child{border-right:none}
 .filter-btn:hover{background:var(--surface2);color:var(--text2)}
@@ -137,7 +137,13 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0
 .row-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--white);line-height:1.2;margin-bottom:6px;letter-spacing:-.2px}
 .row-title .sub{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:400;color:var(--text3);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:4px;font-style:normal}
 .row-desc{font-size:13.5px;color:var(--text2);line-height:1.65;max-width:500px;font-weight:300}
-.row-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--gold2);transition:all .2s}
+
+/* PRO-TIP TAGS */
+.tool-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;border:1px solid var(--border2);color:var(--text3);background:none}
+.tag.pro{border-color:var(--gold2);color:var(--gold)}
+
+.row-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;padding:9px 0;border-bottom:1px solid var(--gold2);transition:all .2s}
 .row-link:hover{color:var(--white);border-color:var(--white)}
 .row-link svg{width:10px;height:10px;transition:transform .2s}
 .row-link:hover svg{transform:translate(3px,-3px)}
@@ -146,14 +152,6 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0
 .row-actions{display:flex;flex-direction:column;align-items:flex-end;gap:8px;padding-top:2px;position:relative;z-index:1}
 .fav-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:14px;padding:4px;transition:color .2s;line-height:1}
 .fav-btn:hover,.fav-btn.active{color:var(--gold)}
-
-/* UTILITIES */
-.util-section{padding:48px 0 0}
-.util-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-top:20px}
-.util-link{background:var(--surface);color:var(--text2);text-decoration:none;padding:18px 20px;font-size:13px;font-weight:400;transition:all .2s;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:3px}
-.util-link:last-child{border-right:none}
-.util-link:hover{background:var(--surface2);color:var(--text)}
-.util-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text3)}
 
 /* CTA */
 .cta{margin:80px 0;padding:56px 48px;border:1px solid var(--border2);border-radius:3px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--surface);position:relative;overflow:hidden}
@@ -188,5 +186,5 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
   .row-title{font-size:17px}
   .cta{grid-template-columns:1fr;padding:36px 28px}
   .filters{width:100%}
-  .filter-btn{flex:1;text-align:center}
+  .filter-btn{flex:1;text-align:center;font-size:9px;padding:9px 8px}
 }
